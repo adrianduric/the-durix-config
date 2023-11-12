@@ -18,14 +18,6 @@ Then open it with any text editor such as nvim, and add the following line:
 
 `export ZDOTDIR=/home/<USER>/.config/zsh`
 
-### Create zsh directory and move .zshrc
+### Clone repo from ~/.config
 
-After these steps, move into ~/.config and make a zsh directory (for convenience), and move the .zshrc file there:
-
-```
-cd ~/.config
-mkdir zsh
-mv ~/.zshrc zsh
-```
-
-The next time you open a terminal, the .zshrc file should now be read from here.
+After these steps, move into ~/.config and clone this repo, which will add `zsh` and `nvim` directories. The next time you open a terminal, the .zshrc file should now be read from here.
