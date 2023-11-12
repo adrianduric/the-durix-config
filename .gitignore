@@ -31,3 +31,6 @@ user-dirs.locale
 xdg-terminals.list
 zsh/.zcompdump*
 zsh/.zsh_history
+StardewValley/
+cef_user_data/
+
