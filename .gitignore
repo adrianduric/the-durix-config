@@ -20,6 +20,7 @@ libreoffice/
 mimeapps.list
 monitors.xml
 monitors.xml~
+nautilus
 pulse/
 spotify/
 systemd/
@@ -28,6 +29,5 @@ ubuntu-xdg-terminals.list
 user-dirs.dirs
 user-dirs.locale
 xdg-terminals.list
-zsh/.zcompdump
-zsh/.zcompdump-adrian-laptop-linux-5.9
-zsh/.zcompdump-adrian-laptop-linux-5.9.zwc
+zsh/.zcompdump*
+zsh/.zsh_history
