@@ -1,8 +1,9 @@
 /* Ignores all files and folders by default */
-*
+/*
 
 /* Exceptions written below are added to repo */
 !.gitignore
-!zsh
+!README.md
+!zsh/.zshrc
 !nvim
 
