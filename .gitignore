@@ -1,36 +1,8 @@
-.gsd-keyboard.settings-ported
-BraveSoftware/
-Code/
-GNOME-xdg-terminals.list
-QtProject.conf
-Signal/
-autostart/
-cat_installer/
-coc/
-dconf/
-enchant/
-eog/
-evolution/
-gedit/
-gnome-control-center/
-gnome-initial-setup-done
-gtk-3.0/
-ibus/
-libreoffice/
-mimeapps.list
-monitors.xml
-monitors.xml~
-nautilus
-pulse/
-spotify/
-systemd/
-tiling-assistant/
-ubuntu-xdg-terminals.list
-user-dirs.dirs
-user-dirs.locale
-xdg-terminals.list
-zsh/.zcompdump*
-zsh/.zsh_history
-StardewValley/
-cef_user_data/
+/* Ignores all files and folders by default */
+*
+
+/* Exceptions written below are added to repo */
+!.gitignore
+!zsh
+!nvim
 
