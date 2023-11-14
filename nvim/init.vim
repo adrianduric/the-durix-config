@@ -33,6 +33,7 @@ set listchars=lead:·,trail:·,tab:>·
 colorscheme onehalflight
 
 
+set mouse=a
 
 " statusline stuff
 set statusline=
