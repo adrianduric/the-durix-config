@@ -35,6 +35,7 @@ export XDG_CONFIG_HOME=/home/adrian/.config
 export XDG_CACHE_HOME=/home/adrian/.cache
 export XDG_DATA_HOME=/home/adrian/.local/share
 
+alias ll='ls -l'
 alias la='ls -a'
 
 alias up='sudo apt update && sudo apt upgrade'
