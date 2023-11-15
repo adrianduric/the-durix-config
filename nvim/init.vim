@@ -5,6 +5,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'sonph/onehalf', { 'rtp' : 'vim' }
 	Plug 'itchyny/vim-gitbranch'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'ap/vim-buftabline'
 "	Plug 'kshenoy/vim-signature'
 call plug#end()
 
@@ -14,7 +15,7 @@ let g:coc_node_path = '$HOME/.config/nvim/node/bin/node'
 
 let g:pyindent_open_paren=shiftwidth()
 let g:netrw_banner=0
-
+let g:buftabline_show=1
 " indents
 set smartindent
 set expandtab
@@ -48,6 +49,9 @@ set statusline+=\ %l:%c
 set statusline+=\ 
 " end statusline
 
+nnoremap H :bprev<CR>
+nnoremap L :bnext<CR>
+
 " do an operator on every line in the file (daG, yaG, =aG)
 xnoremap aG ggoG
 onoremap aG :normal VaG<cr>
@@ -72,8 +76,6 @@ nnoremap <Enter> :noh<CR>
 
 
 " move mellom tabs
-nnoremap H gT
-nnoremap L gt
 " aapne tabs og splits
 nnoremap <leader>t :tabnew 
 nnoremap <leader>v :vsplit 
