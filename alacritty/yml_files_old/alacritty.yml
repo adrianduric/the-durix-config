@@ -1,3 +1,10 @@
+# Window configuration
+window:
+  dimensions:
+    columns: 90
+    lines: 30
+
+
 # Font configuration
 font:
   normal:
