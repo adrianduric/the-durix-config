@@ -1,0 +1,17 @@
+.gsd-keyboard.settings-ported
+autostart/
+coc/
+dconf/
+evolution/
+gtk-3.0/
+mimeapps.list
+monitors.xml
+neofetch/
+nvim/undo_dir/
+pulse/
+sway/backgrounds/
+sway/desktopconfig
+sway/desktopstatus
+sway/trans.py
+user-dirs.dirs
+user-dirs.locale
