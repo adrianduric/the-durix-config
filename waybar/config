@@ -1,0 +1,159 @@
+{
+    // -------------------------------------------------------------------------
+    // Global configuration
+    // -------------------------------------------------------------------------
+
+    "layer": "top",
+
+    "position": "top",
+
+    // If height property would be not present, it'd be calculated dynamically
+    "height": 40,
+
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "network",
+        "memory",
+        "cpu",
+        "temperature",
+        "battery",
+		"pulseaudio",
+        "clock#date",
+        "clock#time"
+    ],
+
+
+    // -------------------------------------------------------------------------
+    // Modules
+    // -------------------------------------------------------------------------
+
+    "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        // Connected to AC
+        "format": "<span font=\"Font Awesome 6 Free Solid\"></span>  {icon}  {capacity}%", // Icon: bolt
+        // Not connected to AC
+        "format-discharging": "{icon}  {capacity}%",
+        "format-icons": [
+            "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: battery-full
+            "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: battery-three-quarters
+            "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: battery-half
+            "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: battery-quarter
+            "<span font=\"Font Awesome 6 Free Solid\"></span>"  // Icon: battery-empty
+        ],
+        "tooltip": true
+    },
+
+    "clock#time": {
+        "interval": 1,
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%T}",
+        "on-click": "alacritty --hold -e cal -3 -wm"
+    },
+
+    "clock#date": {
+      "interval": 10,
+      "format": "<span font=\"Font Awesome 6 Free Solid\"></span>  {:%e %b %Y}", // Icon: calendar-alt
+      "tooltip-format": "{:%e %B %Y, Week %w}",
+        "on-click": "alacritty --hold -e cal -3 -wm"
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": "<span font=\"Font Awesome 6 Free Solid\"></span>  {usage}%", // Icon: microchip
+        "states": {
+          "warning": 70,
+          "critical": 90
+        },
+        "on-click": "alacritty -e htop"
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "<span font=\"Font Awesome 6 Free Solid\"></span>  {}%", // Icon: memory
+        "states": {
+            "warning": 70,
+            "critical": 90
+        },
+        "on-click": "alacritty -e htop"
+    },
+
+    "network": {
+        "interval": 5,
+        "format-wifi": "<span font=\"Font Awesome 6 Free Solid\"></span>  {essid}", // Icon: wifi
+        "format-ethernet": "<span font=\"Font Awesome 6 Free Solid\"></span>  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+        "format-disconnected": "<span font=\"Font Awesome 6 Free Solid\"></span>   Disconnected",
+        "tooltip-format": "Strength: {signalStrength}%",
+        "on-click": "alacritty -e nmtui"
+    },
+
+    "sway/window": {
+        "format": "{title}",
+        "max-length": 30,
+        "rewrite": {
+            ".* — (Mozilla Firefox)": "$1",
+        }
+    },
+
+    "sway/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format": "{name}",
+        "format-icons": {
+            "1:www": "<span font=\"Font Awesome 6 Free Solid\">龜</span>", // Icon: firefox-browser
+            "2:mail": "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: mail
+            "3:editor": "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: code
+            "4:terminals": "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: terminal
+            "5:portal": "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: terminal
+            "urgent": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "focused": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "default": "<span font=\"Font Awesome 6 Free Solid\"></span>"
+        }
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}%<span font=\"Font Awesome 6 Free Solid\"></span>",
+        "format-muted": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+        "format-icons": {
+            "headphones": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "handsfree": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "headset": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "phone": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "portable": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "car": "<span font=\"Font Awesome 6 Free Solid\"></span>",
+            "default": ["<span font=\"Font Awesome 6 Free Solid\"></span>", "<span font=\"Font Awesome 6 Free Solid\"></span>"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "temperature": {
+      "critical-threshold": 80,
+      "interval": 5,
+      "format": "{icon}  {temperatureC}°C",
+      "format-icons": [
+          "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: temperature-empty
+          "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: temperature-quarter
+          "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: temperature-half
+          "<span font=\"Font Awesome 6 Free Solid\"></span>", // Icon: temperature-three-quarters
+          "<span font=\"Font Awesome 6 Free Solid\"></span>"  // Icon: temperature-full
+      ],
+      "tooltip": true
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    }
+
+}

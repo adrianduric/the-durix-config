@@ -11,8 +11,6 @@ call plug#end()
 
 lua require('Comment').setup()
 
-let g:coc_node_path = '$HOME/.config/nvim/node/bin/node'
-
 let g:pyindent_open_paren=shiftwidth()
 let g:netrw_banner=0
 let g:buftabline_show=1
@@ -94,7 +92,7 @@ nnoremap <leader>z :!zathura %<.pdf & <CR><CR>
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
 
-set undodir=$XDG_CONFIG_HOME/nvim/undo_dir
+set undodir=$XDG_DATA_HOME/nvim/undo_dir
 set undofile
 
 " ------------ COC ---------------- "

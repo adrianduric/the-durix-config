@@ -1,0 +1,5 @@
+term=alacritty
+key_up=K
+key_down=J
+insensitive=true
+run-always_parse_args=true
