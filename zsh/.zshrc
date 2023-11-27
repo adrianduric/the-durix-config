@@ -59,7 +59,6 @@ alias act='source env/bin/activate'
 
 alias py='python3'
 alias v='nvim'
-alias open='evince'
 
 alias ifimnt='sshfs adriandu@login.ifi.uio.no:. ~/ifimount'
 alias ifiunmnt='fusermount -u ~/ifimount'
