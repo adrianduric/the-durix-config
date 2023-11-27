@@ -2,10 +2,10 @@
 
 dir="/home/adrian/.config/alacritty/"
 
-if cmp -s $dir/onehalflight.toml $dir/theme.toml; then
-    cp $dir/onehalfdark.toml $dir/theme.toml
+if cmp -s $dir/onehalflight.yml $dir/theme.yml; then
+    cp $dir/onehalfdark.yml $dir/theme.yml
 else
-    cp $dir/onehalflight.toml $dir/theme.toml
+    cp $dir/onehalflight.yml $dir/theme.yml
 fi
 
-touch $dir/alacritty.toml
+touch $dir/alacritty.yml
