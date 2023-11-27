@@ -38,6 +38,8 @@ export XDG_DATA_HOME=/home/adrian/.local/share
 alias ll='ls -l'
 alias la='ls -a'
 
+alias open='xdg-open'
+
 alias pacin='sudo pacman -S'
 alias pacup='sudo pacman -Syu'
 alias pacrem='sudo pacman -Rs'
