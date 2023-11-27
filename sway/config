@@ -128,8 +128,8 @@ bar {
 	swaybar_command waybar
 }
 
-default_border pixel 4
-gaps inner 10
+default_border pixel 1
+# gaps inner 10
 # gaps outer 5
 
 # window colors
