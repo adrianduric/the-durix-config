@@ -179,4 +179,4 @@ bindsym XF86MonBrightnessUp exec light -A 10
 include /etc/sway/config.d/*
 
 exec ${XDG_CONFIG_HOME}/sway/trans.py
-
+exec_always nm-applet --indicator

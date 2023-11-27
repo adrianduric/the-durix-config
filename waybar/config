@@ -25,7 +25,8 @@
         "battery",
 		"pulseaudio",
         "clock#date",
-        "clock#time"
+        "clock#time",
+        "tray"
     ],
 
 
