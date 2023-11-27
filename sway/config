@@ -10,7 +10,7 @@ set $menu wofi --show run
 font pango:SourceCodePro Medium 13
 
 ### Output configuration
-	output * bg /home/adrian/.config/sway/backgrounds/union.png fill
+	output * bg /home/adrian/.config/sway/backgrounds/uniongood.png fill
 #
 # Example configuration:
 #
@@ -145,6 +145,7 @@ input * {
 	repeat_delay 300
 	repeat_rate 27
 	xkb_options caps:escape
+    xkb_numlock enabled
 }
 
 input type:pointer {
