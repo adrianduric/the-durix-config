@@ -1,7 +1,7 @@
 import = ["/home/adrian/.config/alacritty/theme.toml"]
 
 [font]
-size = 12.5
+size = 20
 
 [font.bold]
 family = "JetBrains Mono"
