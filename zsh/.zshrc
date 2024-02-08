@@ -62,6 +62,7 @@ alias gbp='git commit -m "add stuff"'
 alias act='source env/bin/activate'
 
 alias py='python3'
+alias jnb='jupyter notebook'
 alias v='nvim'
 
 alias ifimnt='sshfs adriandu@login.ifi.uio.no:. ~/ifimount'
