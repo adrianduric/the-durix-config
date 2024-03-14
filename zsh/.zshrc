@@ -70,3 +70,5 @@ alias ifiunmnt='fusermount -u ~/ifimount'
 
 export EDITOR=/usr/bin/nvim
 bindkey -v
+
+# speak "The Durix Operating System" &

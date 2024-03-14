@@ -6,6 +6,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'itchyny/vim-gitbranch'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ap/vim-buftabline'
+    Plug 'chaoren/vim-wordmotion'
 "	Plug 'kshenoy/vim-signature'
 call plug#end()
 
