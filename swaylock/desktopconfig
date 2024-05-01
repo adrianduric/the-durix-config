@@ -1,4 +1,4 @@
-image=/home/jona/.config/sway/backgrounds/cat.png
+image=/home/adrian/.config/sway/backgrounds/cat.png
 ignore-empty-password
 show-failed-attempts
 indicator-y-position=800
