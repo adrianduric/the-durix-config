@@ -10,7 +10,7 @@ set $menu wofi -I --show drun
 font pango:SourceCodePro Medium 13
 
 ### Output configuration
-	output * bg /home/adrian/Documents/ADRIAN/Bilder/Bakgrunnsskjerm/Sunnmøre5.jpg fill
+	output * bg /home/adrian/Documents/ADRIAN/Bilder/Bakgrunnsskjerm/Sunnmøre5.jpeg fill
 #
 # Example configuration:
 #
