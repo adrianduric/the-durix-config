@@ -1,4 +1,4 @@
-general.import = ["/home/adrian/.config/alacritty/theme.toml"]
+import = ["/home/adrian/.config/alacritty/theme.toml"]
 
 [font]
 size = 14
