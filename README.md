@@ -1,4 +1,4 @@
-# the-durix-config
+# The Durix Config
 
 My personal Linux setup files.
 
