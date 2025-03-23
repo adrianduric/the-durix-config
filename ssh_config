@@ -5,14 +5,14 @@ Host *
     User adriandu
 
 Host uio
-    HostName login.ifi.uio.no
+    HostName login.uio.no
     ForwardX11 yes
 
 Host dancer dunder rudolph dasher
-    HostName %h.ifi.uio.no
+    HostName %h.uio.no
     ForwardX11 yes
 
 Host ml9
     ForwardX11 yes
-    ProxyJump login.ifi.uio.no
+    ProxyJump login.uio.no
     HostName ml9.hpc.uio.no
