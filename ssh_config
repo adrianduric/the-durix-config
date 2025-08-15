@@ -1,18 +1,19 @@
 # Host github
 #     HostName github.com
 #     User git
-Host *
-    User adriandu
 
 Host uio
+    User adriandu
     HostName login.uio.no
     ForwardX11 yes
 
 Host dancer dunder rudolph dasher
+    User adriandu
     HostName %h.uio.no
     ForwardX11 yes
 
 Host ml9
+    User adriandu
     ForwardX11 yes
     ProxyJump login.uio.no
     HostName ml9.hpc.uio.no
