@@ -16,3 +16,11 @@ Host ml9
     ForwardX11 yes
     ProxyJump login.uio.no
     HostName ml9.hpc.uio.no
+
+Host Fox
+    User ec-adriandu
+    HostName fox.educloud.no
+
+Host fox-int-1
+    User ec-adriandu
+    ProxyCommand ssh ec-adriandu@fox.educloud.no -W int-1:22
