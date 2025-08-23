@@ -44,4 +44,4 @@ To install all except `vim-plug`:
 
     sudo apt install neovim nodejs npm
 
-To install `vim-plug`, follow its [installation guide](https://github.com/junegunn/vim-plug).
+To install `vim-plug`, follow its [installation guide](https://github.com/junegunn/vim-plug). After `vim-plug` is downloaded, open the `Neovim` editor and write `:PlugInstall`.
