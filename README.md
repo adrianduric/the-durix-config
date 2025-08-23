@@ -30,15 +30,15 @@ If `.config` is not already created:
 
 From your home directory, copy all files and subdirectories to their corresponding directories:
 
-    cp -r ~/the-durix-config/.config/* ~/.config
+    ```cp -r ~/the-durix-config/.config/* ~/.config```
     
-    cp -r ~/the-durix-config/.ssh/* ~/.ssh
-    
-    cp ~/the-durix-config/.zshenv ~
+    ```cp -r ~/the-durix-config/.ssh/* ~/.ssh```
+
+    ```cp ~/the-durix-config/.zshenv ~```
 
 ### Setting up Neovim with utilities
 
-To use Neovim with the goodies written in the .config directory, we need to install `Neovim`, `[vim-plug](https://github.com/junegunn/vim-plug)`, `Node.js` and `npm`.
+To use Neovim with the goodies written in the .config directory, we need to install `Neovim`, [`vim-plug`](https://github.com/junegunn/vim-plug), `Node.js` and `npm`.
 
 To install all except `vim-plug`:
 
