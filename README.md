@@ -30,11 +30,11 @@ If `.config` is not already created:
 
 From your home directory, copy all files and subdirectories to their corresponding directories:
 
-    ```cp -r ~/the-durix-config/.config/* ~/.config```
+```cp -r ~/the-durix-config/.config/* ~/.config```
     
-    ```cp -r ~/the-durix-config/.ssh/* ~/.ssh```
+```cp -r ~/the-durix-config/.ssh/* ~/.ssh```
 
-    ```cp ~/the-durix-config/.zshenv ~```
+```cp ~/the-durix-config/.zshenv ~```
 
 ### Setting up Neovim with utilities
 
