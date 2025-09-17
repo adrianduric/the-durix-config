@@ -38,18 +38,22 @@ export XDG_DATA_HOME=/home/adrian/.local/share
 alias ll='ls -l'
 alias la='ls -a'
 
-alias open='xdg-open'
+alias brewin='brew install'
+alias brewup='brew update && brew upgrade'
+alias brewrem='brew uninstall'
 
-alias pacin='sudo pacman -S'
-alias pacup='sudo pacman -Syu'
-alias pacrem='sudo pacman -Rs'
-alias yayin='yay -S'
-alias yayup='yay -Syu'
-alias yayrem='yay -Rs'
 alias aptin='sudo apt install'
 alias aptup='sudo apt update && sudo apt upgrade'
 alias aptrem='sudo apt remove'
 alias aptarem='sudo apt autoremove'
+
+alias pacin='sudo pacman -S'
+alias pacup='sudo pacman -Syu'
+alias pacrem='sudo pacman -Rs'
+
+alias yayin='yay -S'
+alias yayup='yay -Syu'
+alias yayrem='yay -Rs'
 
 alias gs='git status'
 alias gd='git diff'
